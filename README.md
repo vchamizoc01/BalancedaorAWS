@@ -4,7 +4,7 @@
 
 [Configuración.](#configuración)
 
-[Solucion de errores en el proceso.](#Solucionerrores)
+[Solucion de errores en el proceso.](#Errores)
 # Introducción
 # Configuración
 
@@ -77,7 +77,7 @@
 ![](fotos/Imagen33.png)
 
 
-## Solucion errores en el proceso
+## Errores
 
 # Error del puerto 80 al crear el certificado
 #### Al crear el certificado me a dado un fallo del puerto 80 para solucionarlo se debe crear un fichero en sites-available y habilitarlo con sudo a2ensite "fichero".conf.
