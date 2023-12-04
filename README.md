@@ -1,5 +1,8 @@
 # BalancedaorAWS
 # Índice
+[Introducción.](#introducción)
+[Configuración.](#configuración)
+[Solucion errores en el proceso](#Solucion errores)
 # Introducción
 # Configuración
 
