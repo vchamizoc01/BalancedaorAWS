@@ -71,7 +71,7 @@
 ## Solucion errores en el proceso
 
 # Error del puerto 80 al crear el certificado
-Al crear el certificado me a dado un fallo del puerto 80 para solucionarlo se debe crear un fichero en sites-available y habilitarlo con sudo a2ensite "fichero".conf.
+#### Al crear el certificado me a dado un fallo del puerto 80 para solucionarlo se debe crear un fichero en sites-available y habilitarlo con sudo a2ensite "fichero".conf.
 # A la hora de conectar de una maquina a otra
 ### deberás dar los siguientes permisos:
 ```
