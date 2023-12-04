@@ -4,7 +4,7 @@
 
 [Configuración.](#configuración)
 
-[Solucion errores en el proceso.](#Solucionerrores)
+[Solucion de errores en el proceso.](#Solucionerrores)
 # Introducción
 # Configuración
 
