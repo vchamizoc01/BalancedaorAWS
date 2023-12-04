@@ -12,11 +12,11 @@
 ![](fotos/Imagen3.png)
 
 ![](fotos/Imagen4.png)
-### Balanceador
+
 ![](fotos/Imagen5.png)
 
 ![](fotos/Imagen6.png)
-
+### Balanceador
 ![](fotos/Imagen7.png)
 
 ![](fotos/Imagen8.png)
