@@ -1,5 +1,5 @@
 # BalancedaorAWS
-![](img/Imagen1.jpg)
+![](fotos/Imagen1.jpg)
 ![](img/Imagen2.jpg)
 ![](img/Imagen3.jpg)
 ![](img/Imagen4.jpg)
