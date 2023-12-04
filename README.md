@@ -1,4 +1,7 @@
 # BalancedaorAWS
+# Índice
+# Introducción
+# Configuración
 
 ![](fotos/Imagen1.png)
 
