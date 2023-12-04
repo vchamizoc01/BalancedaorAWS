@@ -3,6 +3,8 @@
 # Introducción
 # Configuración
 
+### Configuración de VPC
+
 ![](fotos/Imagen1.png)
 
 ![](fotos/Imagen2.png)
@@ -10,7 +12,7 @@
 ![](fotos/Imagen3.png)
 
 ![](fotos/Imagen4.png)
-
+### Balanceador
 ![](fotos/Imagen5.png)
 
 ![](fotos/Imagen6.png)
@@ -28,7 +30,7 @@
 ![](fotos/Imagen12.png)
 
 ![](fotos/Imagen13.png)
-
+### Maquinas Backend
 ![](fotos/Imagen14.png)
 
 ![](fotos/Imagen15.png)
@@ -52,6 +54,8 @@
 ![](fotos/Imagen25.png)
 
 ![](fotos/Imagen26.png)
+
+### Servidor GGBB
 
 ![](fotos/Imagen27.png)
 
