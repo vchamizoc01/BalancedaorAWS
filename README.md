@@ -60,6 +60,7 @@
 ![](fotos/Imagen29.png)
 
 ![](fotos/Imagen30.png)
+## Certificado
 
 ![](fotos/Imagen31.png)
 
@@ -67,5 +68,8 @@
 
 ![](fotos/Imagen32.png)
 
+Al crear el certificado me a dado un fallo del puerto 80 para solucionarlo se debe crear un fichero en sites-available
+
 ![](fotos/Imagen34.png)
 
+Con la configuración mostrada y habilitarlo con sudo a2ensite balanceador80.conf.
