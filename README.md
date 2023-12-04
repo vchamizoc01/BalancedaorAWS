@@ -9,7 +9,9 @@
 En el siguiente manual realizaremos una configuración en 3 niveles que constara e los siguientes apartados:
 
 Un balanceador en capa 1 expuesta a red pública.
+
 Dos servidor web en Backend, capa 2 (red privada).
+
 Un servidor de BBDD en capa 3 (red privada).
 
 # Configuración
