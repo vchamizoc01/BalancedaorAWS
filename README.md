@@ -64,9 +64,8 @@
 
 ![](fotos/Imagen31.png)
 
-![](fotos/Imagen32.png)
 
-![](fotos/Imagen32.png)
+![](fotos/Imagen33.png)
 
 Al crear el certificado me a dado un fallo del puerto 80 para solucionarlo se debe crear un fichero en sites-available
 
