@@ -17,18 +17,24 @@ En el siguiente manual realizaremos una configuración en 3 niveles que constara
 # Configuración
 
 ### Configuración de VPC
+Para la VPC escogeremos la opcion de VPC y mas por que esta nos permitira crear todo lo encesario para que este en fucionamiento directamente, de la otra forma habria que crear ca da parte de la VPC de forma individual y podria ocasionar algun problema.
 
+Comenzaras poniendo un nombre a esta y seleccionando la direccion de red que queramos para la arquitectura a desarroyar.
 ![](fotos/Imagen1.png)
 
+A continuacion dejaremos las siguiente opcion por defecto y el numero de zonas escogeremos solo una.
 ![](fotos/Imagen2.png)
 
+
 ![](fotos/Imagen3.png)
+Para las gateway seleccionaremos una y los puntos de enlace los dejaremos en ninguno
 
 ![](fotos/Imagen4.png)
-
+Para las subredes seleccionaremos una publica y una privada.
+En el apartado de bloques CIDR dividiremos la subred en dos subredes de 128 IPs.
 ![](fotos/Imagen5.png)
 
-![](fotos/Imagen6.png)
+Con esta configuracion se dara por finalizada la creacion de la VPC y comenzaremos con la configuracion de las instacias.
 ### Balanceador
 ![](fotos/Imagen7.png)
 
