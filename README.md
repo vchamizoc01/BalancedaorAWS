@@ -136,9 +136,11 @@ sudo systemctl restart apache2
 
 ![](fotos/Imagen30.png)
 ## Certificado
-
+Para certificar el sitio web  instalaremos snapd
+```sudo apt install snapd ``` 
 ![](fotos/Imagen31.png)
 
+Una vez instalado se ejecutara al orden ```sudo snap install --classic certbot```
 
 ![](fotos/Imagen33.png)
 
