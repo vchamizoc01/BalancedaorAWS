@@ -101,22 +101,38 @@ sudo a2enmod ssl
 sudo systemctl restart apache2
 ```
 ![](fotos/Imagen13.png)
-### Maquinas Backend
+
+### Backends
+Para las instacias backend se realizaran las mismas configuraciones en ambas.
+Se comenzara instalando Apache y PHP
+
 ![](fotos/Imagen14.png)
 
+Seguidamente nos bajaremos el repositorio de github para editar el fichero de acceso a la base de datos.
+
 ![](fotos/Imagen15.png)
+
+Accederemos al fichero **config.php** y lo editaremos de la siguiente manera:
 
 ![](fotos/Imagen16.png)
 
 ![](fotos/Imagen17.png)
 
+Ahora se le editaran los permisos.
+
 ![](fotos/Imagen18.png)
+
+Lo siguiente sera copiar el fichero **000-default.conf** y lo editaremos
 
 ![](fotos/Imagen19.png)
 
 ![](fotos/Imagen20.png)
 
+en este fichero editaremos la linea documet root para acceder a la pagina de la base de datos
+
 ![](fotos/Imagen22.png)
+
+despues se habilitara el fichero **backend.conf** y se deshabilitara el fichero **000-default.conf**
 
 ![](fotos/Imagen23.png)
 
