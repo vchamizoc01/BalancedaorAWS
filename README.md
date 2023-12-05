@@ -14,11 +14,14 @@
 3. [Solucion de errores en el proceso.](#Errores)
 
 # Introducción
+
 En el siguiente manual, realizaremos una configuración en 3 niveles que constará de los siguientes apartados:
 
 * Un balanceador en la capa 1 expuesto a red pública.
 * Dos servidores web en el backend, capa 2 (red privada).
 * Un servidor de base de datos en la capa 3 (red privada).
+
+Esta estructura realizada en AWS (Amazon Web Services).
 
 # Configuración
 
