@@ -6,10 +6,10 @@
 
 2. [Configuración de instacias.](#configuración)
 
-    * [Creacion de VPC.](###VPC)
-    * [Servidor Balanceador.](###Balanceador)
-    * [Servidores Backend.](###Backends)
-    * [Servidor de base de datos.](###GGBB)
+    * [Creacion de VPC.](#VPC)
+    * [Servidor Balanceador.](#Balanceador)
+    * [Servidores Backend.](#Backends)
+    * [Servidor de base de datos.](#GGBB)
 
 3. [Solucion de errores en el proceso.](#Errores)
 
