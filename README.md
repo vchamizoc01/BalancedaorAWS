@@ -51,6 +51,10 @@ Con esta configuración se dará por finalizada la creación de la VPC y comenza
 
 ![](fotos/Imagen9.png)
 
+![](fotos/ff.png)
+
+![](fotos/ff2.png)
+
 ![](fotos/Imagen10.png)
 
 ![](fotos/Imagen11.png)
