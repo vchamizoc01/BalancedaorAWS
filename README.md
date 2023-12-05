@@ -123,45 +123,78 @@ sudo git clone https://github.com/josejuansanchez/iaw-practica-lamp.git
 ![](fotos/Imagen15.png)
 
 Accederemos al fichero **config.php** y lo editaremos de la siguiente manera:
+```
+sudo nano /var/www/html/iaw-practica-lamp/src/config.php
+```
 
 ![](fotos/Imagen16.png)
 
 ![](fotos/Imagen17.png)
 
 Ahora se le editaran los permisos.
+```
+sudo chown -R www-data:www-data /var/www/html/iaw-practica-lamp
+```
 
 ![](fotos/Imagen18.png)
 
 Lo siguiente sera copiar el fichero **000-default.conf** y lo editaremos
+```
+cd /etc/apache2/sites-available
+sudo cp 000-default.con backend.conf
+```
 
 ![](fotos/Imagen19.png)
 
 ![](fotos/Imagen20.png)
 
-En este fichero editaremos la linea documet root para acceder a la pagina de la base de datos
+En este fichero editaremos la linea documetroot para acceder a la pagina de la base de datos
 
 ![](fotos/Imagen22.png)
 
 ![](fotos/Imagen23.png)
 
 Despues se habilitara el fichero **backend.conf** y se deshabilitara el fichero **000-default.conf**
+```
+sudo a2ensite backend.conf
+sudo a2dissite 000-default.conf
+```
 
 ![](fotos/Imagen24.png)
 
 Ahora se reinicia apache2 para ejecutar los cambios y pasaremos el archivo **database.sql** a la maquina de base de datos.
-
+```
+sudo systemctl restart apache2
+```
 ![](fotos/Imagen25.png)
 
 ![](fotos/Imagen26.png)
 
 ### Servidor GGBB
+Para configurar el servidor de base de datos instalaremos mariadb-server
+```
+sudo apt update
+sudo apt install mariadb-server
+```
 
 ![](fotos/Imagen27.png)
+En el siguente fichero se editara la lina bind-address con la direccion ip del servidor.
 
 ![](fotos/Imagen28.png)
 
 ![](fotos/Imagen29.png)
 
+lo siguiente que se debe realizar es crear un usuario para la base de datos, la base de datos y dar privilegios al usuario sobre esa base de datos para ello usaremos los siguiente comandos
+
+para conectar a la base de datos usaremos ```my sql -u root -p ```
+para crear el usuario usaremos ```create user 'vicente'@'X.X.X.X' identified by '1234'; ```
+para los privilegios del usuario usaremos ```grant all privileges on lam_db.* to vicente@X.X.X.X;```
+para aplicar los privilegios usaremos ```flush privileges;```
+
+lo siguente sera conectar la base de datos con el siguente comando
+```
+sudo mysql -u root < $home/database.sql
+```
 ![](fotos/Imagen30.png)
 ## Certificado
 Para certificar el sitio web  instalaremos snapd.
