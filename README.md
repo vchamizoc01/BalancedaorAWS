@@ -2,16 +2,16 @@
 
 
 # Índice
-[Introducción.](#introducción)
+1. [Introducción.](#introducción)
 
-[Configuración de instacias.](#configuración)
+2. [Configuración de instacias.](#configuración)
 
-    [Creacion de VPC](#VPC)
-    [Servidor Balanceador](#Balanceador)
-    [Servidores Backend.](#Backends)
-    [Servidor de base de datos.](#GGBB)
+    * [Creacion de VPC.](###VPC)
+    * [Servidor Balanceador.](###Balanceador)
+    * [Servidores Backend.](###Backends)
+    * [Servidor de base de datos.](###GGBB)
 
-[Solucion de errores en el proceso.](#Errores)
+3. [Solucion de errores en el proceso.](#Errores)
 
 # Introducción
 En el siguiente manual, realizaremos una configuración en 3 niveles que constará de los siguientes apartados:
