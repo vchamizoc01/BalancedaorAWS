@@ -52,11 +52,11 @@ sudo apt update
 sudo apt install -y apache2
 ```
 
-Una vez se hayan activado se copiara el fichero default-ssl.conf y le daremos un nombre para identificarlo mas tarde. Todo esto lo debemos realizar en el mismo directorio **/etc/apache2/sites-available**
+Una vez se hayan activado se copiará el fichero default-ssl.conf y le daremos un nombre para identificarlo más tarde. Todo esto lo debemos realizar en el mismo .directorio**/etc/apache2/sites-available**
 
 ![](fotos/Imagen7.png)
 
-una vez instalado el servicio apache activaremos los siguientes modulos
+Una vez instalado el servicio apache activaremos los siguientes módulos:
 
 ```
 a2enmod proxy
@@ -73,7 +73,7 @@ a2enmod lbmethod_byrequests
 
 ![](fotos/Imagen8.png)
 
-ahora se editara el fichero copiado anterior mente con las siguentes lineas ademas de que se debe comentar la linea documetroot
+Ahora se editará el fichero copiado anterior mente con las siguientes líneas además de que se debe comentar la línea documetroot.
 
 ![](fotos/Imagen9.png)
 
@@ -81,7 +81,7 @@ ahora se editara el fichero copiado anterior mente con las siguentes lineas adem
 
 ![](fotos/ff2.png)
 
-Activaremos el sitio con el comando a2ensite **balanceador.conf** y desabilitaremos el fichero **000-default.conf**
+Activaremos el sitio con el comando a2ensite **balanceador.conf** y deshabilitaremos el fichero **000-default.conf**.
 ```
 sudo a2ensite balanceador.conf
 ```
@@ -91,7 +91,7 @@ sudo a2dissite 000-default.conf
 ```
 ![](fotos/Imagen11.png)
 
-Para finalizar el balanceador se activara el modulo SSH con sudo a2ensite ssl y aplicaremos los cambios reiniciando el servicio Apache2.
+Para finalizar el balanceador se activará el módulo SSH con sudo a2ensite SSL y aplicaremos los cambios reiniciando el servicio Apache2.
 ```
 sudo a2enmod ssl
 ```
@@ -136,8 +136,9 @@ sudo systemctl restart apache2
 
 ![](fotos/Imagen30.png)
 ## Certificado
-Para certificar el sitio web  instalaremos snapd
+Para certificar el sitio web  instalaremos snapd.
 ```sudo apt install snapd ``` 
+
 ![](fotos/Imagen31.png)
 
 Una vez instalado se ejecutara al orden ```sudo snap install --classic certbot```
