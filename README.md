@@ -1,10 +1,13 @@
 # BalancedaorAWS
+
+
 # Índice
 [Introducción.](#introducción)
 
 [Configuración.](#configuración)
 
 [Solucion de errores en el proceso.](#Errores)
+
 # Introducción
 En el siguiente manual realizaremos una configuración en 3 niveles que constara e los siguientes apartados:
 
@@ -17,28 +20,29 @@ En el siguiente manual realizaremos una configuración en 3 niveles que constara
 # Configuración
 
 ### Configuración de VPC
-Para la VPC escogeremos la opcion de VPC y mas por que esta nos permitira crear todo lo encesario para que este en fucionamiento directamente, de la otra forma habria que crear ca da parte de la VPC de forma individual y podria ocasionar algun problema.
+Para la VPC escogeremos la opción de VPC y mas por que esta nos permitirá crear todo lo necesario para que este en funcionamiento directamente, de la otra forma habría que crear ca da parte de la VPC de forma individual y podría ocasionar algún problema.
 
-Comenzaras poniendo un nombre a esta y seleccionando la direccion de red que queramos para la arquitectura a desarroyar.
+Comenzaras poniendo un nombre a esta y seleccionando la dirección de red que queramos para la arquitectura a desarrollar.
 
 ![](fotos/Imagen1.png)
 
-A continuacion dejaremos las siguiente opcion por defecto y el numero de zonas escogeremos solo una.
+A continuación dejaremos las siguiente opción por defecto y el número de zonas escogeremos solo una.
 
 ![](fotos/Imagen2.png)
 
-Para las gateway seleccionaremos una y los puntos de enlace los dejaremos en ninguno
+Para las gateway seleccionamos una y los puntos de enlace los dejaremos en ninguno.
 
 ![](fotos/Imagen3.png)
 
 ![](fotos/Imagen4.png)
 
-Para las subredes seleccionaremos una publica y una privada.
+Para las subredes se seleccionará una publica y una privada.
 En el apartado de bloques CIDR dividiremos la subred en dos subredes de 128 IPs.
+
 
 ![](fotos/Imagen5.png)
 
-Con esta configuracion se dara por finalizada la creacion de la VPC y comenzaremos con la configuracion de las instacias.
+Con esta configuración se dará por finalizada la creación de la VPC y comenzaremos con la configuración de las instancias.
 
 ### Balanceador
 ![](fotos/Imagen7.png)
