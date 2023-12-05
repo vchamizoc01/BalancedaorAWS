@@ -27,10 +27,9 @@ A continuacion dejaremos las siguiente opcion por defecto y el numero de zonas e
 
 ![](fotos/Imagen2.png)
 
+Para las gateway seleccionaremos una y los puntos de enlace los dejaremos en ninguno
 
 ![](fotos/Imagen3.png)
-
-Para las gateway seleccionaremos una y los puntos de enlace los dejaremos en ninguno
 
 ![](fotos/Imagen4.png)
 
