@@ -40,6 +40,7 @@ En el apartado de bloques CIDR dividiremos la subred en dos subredes de 128 IPs.
 ![](fotos/Imagen5.png)
 
 Con esta configuracion se dara por finalizada la creacion de la VPC y comenzaremos con la configuracion de las instacias.
+
 ### Balanceador
 ![](fotos/Imagen7.png)
 
