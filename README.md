@@ -4,7 +4,12 @@
 # Índice
 [Introducción.](#introducción)
 
-[Configuración.](#configuración)
+[Configuración de instacias.](#configuración)
+
+    [Creacion de VPC](#VPC)
+    [Servidor Balanceador](#Balanceador)
+    [Servidores Backend.](#Backends)
+    [Servidor de base de datos.](#GGBB)
 
 [Solucion de errores en el proceso.](#Errores)
 
@@ -17,7 +22,7 @@ En el siguiente manual, realizaremos una configuración en 3 niveles que constar
 
 # Configuración
 
-### Configuración de VPC
+### VPC
 Para la VPC, seleccionaremos la opción de "VPC y más", ya que esto nos permitirá crear todo lo necesario para que esté en funcionamiento directamente. De otra forma, tendríamos que crear cada parte de la VPC de forma individual y podría ocasionar algún problema.
 
 Comenzarás dando un nombre a esta y seleccionando la dirección de red que queramos para la arquitectura a desarrollar.
@@ -167,7 +172,7 @@ sudo systemctl restart apache2
 
 ![](fotos/Imagen26.png)
 
-### Servidor GGBB
+### GGBB
 Para configurar el servidor de base de datos, instalaremos mariadb-server
 ```
 sudo apt update
@@ -175,6 +180,7 @@ sudo apt install mariadb-server
 ```
 
 ![](fotos/Imagen27.png)
+
 En el siguiente archivo, se editará la línea **bind-address** con la dirección IP del servidor.
 
 ![](fotos/Imagen28.png)
@@ -196,6 +202,7 @@ Lo siguiente será conectar la base de datos con el siguiente comando:
 sudo mysql -u root < $home/database.sql
 ```
 ![](fotos/Imagen30.png)
+
 ## Certificado
 Para certificar el sitio web, instalaremos snapd.
 ```sudo apt install snapd ``` 
