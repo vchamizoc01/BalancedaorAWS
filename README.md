@@ -45,9 +45,35 @@ En el apartado de bloques CIDR dividiremos la subred en dos subredes de 128 IPs.
 Con esta configuración se dará por finalizada la creación de la VPC y comenzaremos con la configuración de las instancias.
 
 ### Balanceador
+Para la creacion del balanceador instalaremos Apache para ello se ejecutaran los siguentes comandos:
+
+```
+sudo apt update
+sudo apt install -y apache2
+```
+
+Una vez se hayan activado se copiara el fichero default-ssl.conf y le daremos un nombre para identificarlo mas tarde. Todo esto lo debemos realizar en el mismo directorio **/etc/apache2/sites-available**
+
 ![](fotos/Imagen7.png)
 
+una vez instalado el servicio apache activaremos los siguientes modulos
+
+```
+a2enmod proxy
+a2enmod proxy_http
+a2enmod proxy_ajp
+a2enmod rewrite
+a2enmod deflate
+a2enmod headers
+a2enmod proxy_balancer
+a2enmod proxy_connect
+a2enmod proxy_html
+a2enmod lbmethod_byrequests
+```
+
 ![](fotos/Imagen8.png)
+
+ahora se editara el fichero copiado anterior mente con las siguentes lineas ademas de que se debe comentar la linea documetroot
 
 ![](fotos/Imagen9.png)
 
@@ -55,12 +81,25 @@ Con esta configuración se dará por finalizada la creación de la VPC y comenza
 
 ![](fotos/ff2.png)
 
+Activaremos el sitio con el comando a2ensite **balanceador.conf** y desabilitaremos el fichero **000-default.conf**
+```
+sudo a2ensite balanceador.conf
+```
 ![](fotos/Imagen10.png)
-
+```
+sudo a2dissite 000-default.conf
+```
 ![](fotos/Imagen11.png)
 
-![](fotos/Imagen12.png)
+Para finalizar el balanceador se activara el modulo SSH con sudo a2ensite ssl y aplicaremos los cambios reiniciando el servicio Apache2.
+```
+sudo a2enmod ssl
+```
 
+![](fotos/Imagen12.png)
+```
+sudo systemctl restart apache2
+```
 ![](fotos/Imagen13.png)
 ### Maquinas Backend
 ![](fotos/Imagen14.png)
