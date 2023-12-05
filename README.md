@@ -186,12 +186,15 @@ En el siguente fichero se editara la lina bind-address con la direccion ip del s
 
 lo siguiente que se debe realizar es crear un usuario para la base de datos, la base de datos y dar privilegios al usuario sobre esa base de datos para ello usaremos los siguiente comandos
 
-para conectar a la base de datos usaremos ```my sql -u root -p ```
-para crear el usuario usaremos ```create user 'vicente'@'X.X.X.X' identified by '1234'; ```
-para los privilegios del usuario usaremos ```grant all privileges on lam_db.* to vicente@X.X.X.X;```
-para aplicar los privilegios usaremos ```flush privileges;```
+* para conectar a la base de datos usaremos ```my sql -u root -p ```
 
-lo siguente sera conectar la base de datos con el siguente comando
+* para crear el usuario usaremos ```create user 'vicente'@'X.X.X.X' identified by '1234'; ```
+
+* para los privilegios del usuario usaremos ```grant all privileges on lam_db.* to vicente@X.X.X.X;```
+
+* para aplicar los privilegios usaremos ```flush privileges;```
+
+* lo siguente sera conectar la base de datos con el siguente comando
 ```
 sudo mysql -u root < $home/database.sql
 ```
