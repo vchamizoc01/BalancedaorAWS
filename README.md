@@ -105,11 +105,21 @@ sudo systemctl restart apache2
 ### Backends
 Para las instacias backend se realizaran las mismas configuraciones en ambas.
 Se comenzara instalando Apache y PHP
+```
+sudo apt update
+sudo apt install -y apache2
+sudo apt install php libapache2-mod-php php-mysql
+```
 
 ![](fotos/Imagen14.png)
 
-Seguidamente nos bajaremos el repositorio de github para editar el fichero de acceso a la base de datos.
+Seguidamente nos bajaremos el repositorio de github para editar el fichero de acceso a la base de datos. Esta descarga la realizaremos en el directorio **/var/www/html**
 
+```
+sudo apt install -y git
+sudo mkdir /var/www/html
+sudo git clone https://github.com/josejuansanchez/iaw-practica-lamp.git 
+```
 ![](fotos/Imagen15.png)
 
 Accederemos al fichero **config.php** y lo editaremos de la siguiente manera:
@@ -128,15 +138,17 @@ Lo siguiente sera copiar el fichero **000-default.conf** y lo editaremos
 
 ![](fotos/Imagen20.png)
 
-en este fichero editaremos la linea documet root para acceder a la pagina de la base de datos
+En este fichero editaremos la linea documet root para acceder a la pagina de la base de datos
 
 ![](fotos/Imagen22.png)
 
-despues se habilitara el fichero **backend.conf** y se deshabilitara el fichero **000-default.conf**
-
 ![](fotos/Imagen23.png)
 
+Despues se habilitara el fichero **backend.conf** y se deshabilitara el fichero **000-default.conf**
+
 ![](fotos/Imagen24.png)
+
+Ahora se reinicia apache2 para ejecutar los cambios y pasaremos el archivo **database.sql** a la maquina de base de datos.
 
 ![](fotos/Imagen25.png)
 
